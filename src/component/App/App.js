@@ -21,10 +21,10 @@ React.useEffect(() => {
   return (
     <div className="App">
       <Switch>
-        <Route exact path='/'>
+        <Route exact path='/currency-calculator'>
           <Main currency={currency}/>
         </Route>
-        <Route exact path='/converter'>
+        <Route exact path='/currency-calculator/converter'>
           <Converter currency={currency}/>
         </Route>
       </Switch>

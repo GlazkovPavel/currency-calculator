@@ -10,6 +10,12 @@
   transition: opacity 0.3s ease-in-out;
 }
 
+.converter__text{
+  width: 182px;
+}
+.converter__num{
+  width: 160px;
+}
 .converter__link:hover{
   cursor: pointer;
   opacity: 0.8;

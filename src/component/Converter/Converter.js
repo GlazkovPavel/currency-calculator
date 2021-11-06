@@ -23,7 +23,7 @@ export function Converter(props) {
   }
 
   const getCurrentCourse = () => {
-    setResultEU((changeEU * (props.currency?.rates.RUB))?.toFixed(3))
+    setResultEU((changeEU * (props.currency?.rates.RUB))?.toFixed(2))
   }
 
   function handleChangeDollar(e) {
@@ -32,14 +32,14 @@ export function Converter(props) {
   }
 
   const getCurrentCourseDollar = () => {
-    setResultDollar((changeEU * (1 /props.currency?.rates.USD * props.currency?.rates.RUB))?.toFixed(3))
+    setResultDollar((changeDollar * (1 /props.currency?.rates.USD * props.currency?.rates.RUB))?.toFixed(2))
   }
 
   return(
     <section className='container'>
       <h2>Конвертер валют</h2>
       <div className='container__item'>
-        <p className='container__text'>Из евро в рубли</p>
+        <p className='container__text converter__text'>Из евро в рубли</p>
         <input
           type='number'
           placeholder="Введите значение"
@@ -48,10 +48,10 @@ export function Converter(props) {
           className='converter__input'
         />
         <button className='converter__button' onClick={getCurrentCourse}>Конвертировать</button>
-        <p className='container__num'>{resultEU} {resultEU.length !==0 && '₽'}</p>
+        <p className='container__num converter__num'>{resultEU} {resultEU.length !==0 && '₽'}</p>
       </div>
       <div className='container__item'>
-        <p className='container__text'>Из долларов в рубли</p>
+        <p className='container__text converter__text'>Из долларов в рубли</p>
         <input
           type='number'
           placeholder="Введите значение"
@@ -60,7 +60,7 @@ export function Converter(props) {
           className='converter__input'
         />
         <button className='converter__button' onClick={getCurrentCourseDollar}>Конвертировать</button>
-        <p className='container__num'>{resultDollar} {resultDollar.length !==0 && '₽'}</p>
+        <p className='container__num converter__num'>{resultDollar} {resultDollar.length !==0 && '₽'}</p>
       </div>
 
 
