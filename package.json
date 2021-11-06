@@ -2,7 +2,7 @@
   "name": "currency-calculator",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://glazkovpavel.github.io/currency-calculator/",
+  "homepage": "https://glazkovpavel.github.io/currency-calculator/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
