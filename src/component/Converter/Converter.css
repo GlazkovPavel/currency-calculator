@@ -1,0 +1,41 @@
+.converter__link {
+  font-style: normal;
+  font-weight: normal;
+  color: #3456F3;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  margin-left: 6px;
+  padding-top: 50px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.converter__link:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+.converter__input{
+  height: 36px;
+  border: 1px solid cadetblue;
+  border-radius: 6px;
+}
+.converter__button{
+  width: 100px;
+  height: 36px;
+  font-style: normal;
+  border: none;
+  font-weight: 500;
+  color: white;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 6px;
+  background-color: cadetblue;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.converter__button:hover{
+  cursor: pointer;
+  opacity: .6;
+
+}
