@@ -9,7 +9,6 @@ export function Main(props) {
 
   return(
     <section className="container">
-      {/*{props.isLoading && <Preloader />}*/}
       <h2>Курс валют</h2>
       <div className="container__item">
         <img className="container__image" alt="dollar" src={euro}/>

@@ -14,17 +14,16 @@ React.useEffect(() => {
   api.currency()
     .then((res) => {
       setCurrency(res)
-      console.log(res)
     })
 }, [])
 
   return (
     <div className="App">
       <Switch>
-        <Route exact path='/currency-calculator'>
+        <Route exact path='/'>
           <Main currency={currency}/>
         </Route>
-        <Route exact path='/currency-calculator/converter'>
+        <Route exact path='/converter'>
           <Converter currency={currency}/>
         </Route>
       </Switch>
